@@ -10,6 +10,8 @@ requestURL = 'https://ghibliapi.herokuapp.com/films';
 request.open('GET', requestURL,true);
 request.send();
 
+var titlespelis = [];
+
 request.onload = function() {
     var peliculas = JSON.parse(this.response)
     if (request.status>=200 && request.status <400) {
@@ -23,6 +25,8 @@ request.onload = function() {
 
 function showMovies(JsonObj){
     for(var i =0; i<JsonObj.length; i++){
+        titlespelis.push(JsonObj[i].title);
+
         const card = document.createElement('div');
         card.setAttribute('class','element');
 
@@ -57,3 +61,7 @@ function showMovies(JsonObj){
         cardbody.appendChild(p1);
     }
 }
+
+$( "#autocomplete" ).autocomplete({
+    source: titlespelis
+  });
