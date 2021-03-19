@@ -25,7 +25,7 @@ app.post('/movie', (req, res) =>{
     res.redirect('/movie/' + {name: req.body.titleMovie}.name)
 });
 
-app.post('/movie', (req, res) =>{
+app.get('/movie/', (req, res) =>{
     //console.log({ name: req.body.titleMovie }.name)
     res.redirect('/')
 });
