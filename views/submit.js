@@ -28,7 +28,7 @@ function showMovies(JsonObj){
         titlespelis.push(JsonObj[i].title);
         if(document.getElementById("title").innerHTML == JsonObj[i].title){
             const card = document.createElement('div');
-            card.setAttribute('class','card col-6 px-0');
+            card.setAttribute('class','card col-lg-6 px-0');
 
             const titles = document.createElement('div');
             titles.setAttribute('class','titulos card-header');
