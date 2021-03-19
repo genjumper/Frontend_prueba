@@ -29,7 +29,7 @@ function showMovies(JsonObj){
         titlespelis.push(JsonObj[i].title);
 
         const card = document.createElement('div');
-        card.setAttribute("class","card pb-3 m-3 col-xl-3");
+        card.setAttribute("class","card pb-3 m-3 col-xl-3 px-0");
 
         const titles = document.createElement('div');
         titles.setAttribute('class','card-header');
@@ -47,7 +47,7 @@ function showMovies(JsonObj){
         p2.textContent = JsonObj[i].release_date;
 
         const cardbody = document.createElement('div');
-        cardbody.setAttribute('class','card-body');
+        cardbody.setAttribute('class','card-body ms-2');
 
         const p1 = document.createElement('p');
         p1.setAttribute('class','card-text');
