@@ -4,7 +4,7 @@ Use la arquitectura de Express, la use porque es con la que me encuentro mas fam
 
 Esta aplicacion es algo insegura, no tiene autentificacion tambien es vulnerable a code injecting y otros ataques, la precentacion no es muy complicada y si tuviera mas tiempo me gustaria resolver estos problemas, ademas que la busqueda podria ser mucho mejor.
 
-https://github.com/genjumper/Frontend_prueba/blob/master/views/submit.js 
+https://github.com/genjumper/Frontend_prueba/blob/Prueba/views/submit.js
 Me siento orgulloso de esta parte, logre sacar la informacion de la busqueda pasando por diferentes paginas para poder cargarla y mostrar la busqueda realizada.
 
 https://jefrontend.herokuapp.com/
