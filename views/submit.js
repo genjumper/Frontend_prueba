@@ -1,7 +1,7 @@
 const main = document.getElementById('main');
 
 const contenedor = document.createElement('div');
-contenedor.setAttribute('class', 'container');
+contenedor.setAttribute('class', 'container row justify-content-lg-center');
 
 main.appendChild(contenedor);
 
@@ -28,7 +28,7 @@ function showMovies(JsonObj){
         titlespelis.push(JsonObj[i].title);
         if(document.getElementById("title").innerHTML == JsonObj[i].title){
             const card = document.createElement('div');
-            card.setAttribute('class','card');
+            card.setAttribute('class','card col-6 px-0');
 
             const titles = document.createElement('div');
             titles.setAttribute('class','titulos card-header');
@@ -40,6 +40,8 @@ function showMovies(JsonObj){
             const h3 = document.createElement('h5');
             h3.setAttribute('class','card-subtitle text-muted');
             h3.textContent = JsonObj[i].original_title;
+
+            const hr = document.createElement('hr');
             
             const p2 = document.createElement('p');
             p2.textContent = JsonObj[i].release_date;
@@ -55,6 +57,7 @@ function showMovies(JsonObj){
             card.appendChild(titles);
             titles.appendChild(h1);
             titles.appendChild(h3);
+            titles.appendChild(hr);
             card.appendChild(cardbody);
             cardbody.appendChild(p2);
             cardbody.appendChild(p1);

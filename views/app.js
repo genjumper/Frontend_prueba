@@ -42,6 +42,7 @@ function showMovies(JsonObj){
         h3.setAttribute('class','card-subtitle text-muted');
         h3.textContent = JsonObj[i].original_title;
         
+        const hr = document.createElement('hr');
 
         const p2 = document.createElement('p');
         p2.textContent = JsonObj[i].release_date;
@@ -57,6 +58,7 @@ function showMovies(JsonObj){
         card.appendChild(titles);
         titles.appendChild(h1);
         titles.appendChild(h3);
+        titles.appendChild(hr);
         card.appendChild(cardbody);
         cardbody.appendChild(p2);
         cardbody.appendChild(p1);
