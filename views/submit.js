@@ -38,7 +38,7 @@ function showMovies(JsonObj){
             h1.textContent = JsonObj[i].title;
 
             const h3 = document.createElement('h3');
-            h3.setAttribute('class','');
+            h3.setAttribute('class','card-subtitle');
             h3.textContent = JsonObj[i].original_title;
             
             const p2 = document.createElement('p');
