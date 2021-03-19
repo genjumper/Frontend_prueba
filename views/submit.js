@@ -57,9 +57,9 @@ function showMovies(JsonObj){
             card.appendChild(titles);
             titles.appendChild(h1);
             titles.appendChild(h3);
-            titles.appendChild(hr);
             card.appendChild(cardbody);
             cardbody.appendChild(p2);
+            cardbody.appendChild(hr);
             cardbody.appendChild(p1);
             found = true;
         }
