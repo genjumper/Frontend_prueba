@@ -1,6 +1,9 @@
 #main {
     margin-top: 100px;
 }
+.card {
+    max-height: 350px;
+}
 
 ul.ui-autocomplete {
     color: black !important;
@@ -24,4 +27,7 @@ ul.ui-autocomplete {
 
 .card-header {
     text-align: center;
+}
+.card-body {
+    overflow: auto;
 }
