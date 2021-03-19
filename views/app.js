@@ -2,7 +2,7 @@
 const main = document.getElementById('main');
 
 const contenedor = document.createElement('div');
-contenedor.setAttribute('class', 'container');
+contenedor.setAttribute('class', 'row justify-content-lg-center');
 
 main.appendChild(contenedor);
 
@@ -29,7 +29,7 @@ function showMovies(JsonObj){
         titlespelis.push(JsonObj[i].title);
 
         const card = document.createElement('div');
-        card.setAttribute("class","card pb-3 m-3");
+        card.setAttribute("class","card pb-3 m-3 col-lg-3");
 
         const titles = document.createElement('div');
         titles.setAttribute('class','card-header');
