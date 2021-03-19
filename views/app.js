@@ -29,13 +29,13 @@ function showMovies(JsonObj){
         titlespelis.push(JsonObj[i].title);
 
         const card = document.createElement('div');
-        card.setAttribute('class','element');
+        card.setAttribute("class","card pb-3 m-3");
 
         const titles = document.createElement('div');
-        titles.setAttribute('class','titulos');
+        titles.setAttribute('class','card-header');
 
         const h1 = document.createElement('h1');
-        h1.setAttribute('class','tituloCard card-title');
+        h1.setAttribute('class','tituloCard');
         h1.textContent = JsonObj[i].title;
 
         const h3 = document.createElement('h3');

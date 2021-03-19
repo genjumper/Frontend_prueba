@@ -21,3 +21,7 @@ ul.ui-autocomplete {
 .form2 {
     margin-top: 60px;
 }
+
+.card-header {
+    text-align: center;
+}

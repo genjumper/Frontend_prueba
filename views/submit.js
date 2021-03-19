@@ -28,7 +28,7 @@ function showMovies(JsonObj){
         titlespelis.push(JsonObj[i].title);
         if(document.getElementById("title").innerHTML == JsonObj[i].title){
             const card = document.createElement('div');
-            card.setAttribute('class','element');
+            card.setAttribute('class','card');
 
             const titles = document.createElement('div');
             titles.setAttribute('class','titulos');
@@ -63,13 +63,13 @@ function showMovies(JsonObj){
     }
     if (found == false){
         const card = document.createElement('div');
-        card.setAttribute('class','element');
+        card.setAttribute('class','card');
 
         const titles = document.createElement('div');
-        titles.setAttribute('class','titulos');
+        titles.setAttribute('class','card-title');
 
         const h1 = document.createElement('h1');
-        h1.setAttribute('class','tituloCard card-title');
+        h1.setAttribute('class','tituloCard');
         h1.textContent = "No existe esta pelicula";
 
         const h3 = document.createElement('h3');
