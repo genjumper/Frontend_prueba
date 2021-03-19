@@ -25,14 +25,18 @@ app.post('/movie', (req, res) =>{
     res.redirect('/movie/' + {name: req.body.titleMovie}.name)
 });
 
-app.get('/movie/', (req, res) =>{
-    //console.log({ name: req.body.titleMovie }.name)
-    res.redirect('/')
-});
-
 app.get('/movie/:title', (req, res) =>{
     const title = req.params;
     res.render('movie', title);
+});
+
+app.post('*', (req, res) =>{
+    //console.log({ name: req.body.titleMovie }.name)
+    res.redirect('home')
+});
+app.get('*', (req, res) =>{
+    //console.log({ name: req.body.titleMovie }.name)
+    res.redirect('home')
 });
 
 
